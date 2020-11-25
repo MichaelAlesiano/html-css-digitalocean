@@ -1,0 +1,50 @@
+/* Debug */
+.debug [class*='col-']{
+  background-color: lightgrey;
+  height: 100px;
+  border: 1px solid red;
+}
+
+.debug .h_500 {
+  height: 500px;
+}
+
+.debug .h_400 {
+  height: 400px;
+}
+
+.debug .h_300 {
+  height: 300px;
+}
+
+.debug .h_50 {
+  height: 50px;
+}
+
+
+#jumbotron {
+  background-color: #004aff;
+}
+
+/* Main */
+
+#loghi {
+  background-color: #011d4c;
+}
+
+#designed {
+  background-color: #011d4c;
+}
+
+#service {
+  background-color: #0042c1;
+}
+
+#get {
+  background-color: #0035af;
+}
+
+/* Footer */
+footer {
+  background-color: #011d4c;
+}
