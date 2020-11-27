@@ -7,97 +7,159 @@
   <title>DigitalOcean</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 <body>
 
   <!-- Inizio header -->
   <header>
-    <!-- Inizio Nav -->
     <div class="container">
-      <div class="row debug">
-        <div class="col-xs-6 col-lg-3"></div>
-        <div class="col-xs-6 col-lg-9"></div>
+      <div class="row">
+
+        <!-- Sezione logo -->
+        <div class="header_logo col-xs-3">
+          <a href="index.html"><img src="https://images.prismic.io/www-static/49aa0a09-06d2-4bba-ad20-4bcbe56ac507_logo.png?auto=compress,format" alt="Digital Ocean Logo"></a>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="visible-lg-block">
+
+          <!-- Menù centrale -->
+          <div class="central_nav col-lg-5">
+            <ul>
+              <li><a class="dropdown" href="#">Products</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a class="dropdown" href="#">Community</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+
+          <!-- Menù destra -->
+          <div class="dx_nav col-lg-4">
+            <ul>
+              <li><a href="#">Docs</a></li>
+              <li><a class="dropdown" href="#">Support</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a class="my_btn btn btn-default" href="#" role="button">Sign Up</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Hamburger NavBar -->
+        <nav class="hidden-lg">
+          <div class="nav_bar col-xs-9 text-right">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
       </div>
-
     </div>
-    <!-- Fine Nav -->
-
   </header>
   <!-- Fine header -->
 
-  <!-- Inizio Jumbotron -->
-  <section id="jumbotron">
-
+  <!-- Jumbotron -->
+  <section class="jumbotron">
     <div class="container">
+      <div class="row">
 
-      <div class="row debug">
-
-        <div class="col-xs-12 col-sm-7 h_300">
-
+        <!-- Testo Jumbotron -->
+        <div class="jumb_text col-xs-12 col-sm-7">
+          <h1>The simplest cloud platform for developers & teams</h1>
+          <p>Deploy, manage and scale cloud applications faster and more efficently on DigitalOcean. We make managing infrastructure easy for teams and businesses whether you're running one virtual machine or ten thousand.</p>
         </div>
 
-        <div class="col-xs-12 col-sm-5 h_300">
-
+        <!-- Jumbotron form-->
+        <div class="jumb_form col-xs-12 col-sm-5">
+          <div class="form_box">
+            <h2 class="text-center">Deploy your app in seconds.</h2>
+            <h2 class="text-center">Get started now.</h2>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <a class="form_submit my_btn btn btn-primary btn-lg btn-block" href="#" role="button">Create your account</a>
+            <a class="form_google my_btn btn btn-default btn-lg btn-block" href="#" role="button">Sign up with Google</a>
+            <p class="text-center">by signing up you agree to the <a href="#">Terms of service</a>.</p>
+          </div>
         </div>
-
       </div>
-
     </div>
-
   </section>
-  <!-- Fine Jumbotron -->
 
   <!-- Inizio main -->
   <main>
-
-    <!-- Inizio sezione loghi -->
-    <section id="loghi">
-
+    <!-- Sezione partners -->
+    <section id="partners" class="text-center">
       <div class="container">
-
-        <div class="row debug text-center">
-
-          <div class="col-xs-12"><p>Ciao</p></div>
-          <div class="col-xs-6 col-sm-2"><p>Ciao</p></div>
-          <div class="col-xs-6 col-sm-2"><p>Ciao</p></div>
-          <div class="col-xs-6 col-sm-2"><p>Ciao</p></div>
-          <div class="col-xs-6 col-sm-2"><p>Ciao</p></div>
-          <div class="col-xs-6 col-sm-2"><p>Ciao</p></div>
-          <div class="col-xs-6 col-sm-2"><p>Ciao</p></div>
-          <div class="col-xs-12"><p>Ciao</p></div>
-
+        <h4 class="text-uppercase">Innovative Businesses trust digital ocean</h4>
+        <div class="partners_logos mtb_20">
+          <ul>
+            <li><a href="#"><img class="img-responsive" src="img/logo_docker.png" alt="Docker Logo"></a></li>
+            <li><a href="#"><img class="img-responsive" src="img/logo_gitlab.png" alt="GitLab Logo"></a></li>
+            <li><a href="#"><img class="img-responsive" src="img/logo_slack.png" alt="Slack Logo"></a></li>
+            <li><a href="#"><img class="img-responsive" src="img/logo_hashicorp.png" alt="HashiCorp Logo"></a></li>
+            <li><a href="#"><img class="img-responsive" src="img/logo_docker.png" alt="Docker Logo"></a></li>
+            <li><a href="#"><img class="img-responsive" src="img/logo_splunk.png" alt="Splunk Logo"></a></li>
+          </ul>
         </div>
-
+        <a href="#">View customers stories &rsaquo;</a>
       </div>
-
     </section>
-    <!-- Fine sezione loghi -->
 
-    <!-- Inizio sezione deploy -->
+    <!-- Sezione Deploy -->
     <section id="deploy">
-
       <div class="container">
-
-        <div class="row debug">
-
-          <div class="col-xs-12"></div>
-          <div class="col-xs-12 col-sm-4"></div>
-          <div class="col-xs-12 col-sm-4"></div>
-          <div class="col-xs-12 col-sm-4"></div>
-
+        <div class="row text-center">
+          <div class="deploy_text col-xs-12">
+            <h2>Deploy and scale seamlessly</h2>
+            <p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+          </div>
         </div>
 
-        <div class="row debug">
+        <div class="main_deploy row">
+          <div class="deploy_index col-sm-4">
+            <ul>
+              <li><a href="#">Deploy</a></li>
+              <li><a href="#">Manage</a></li>
+              <li><a href="#">Secure</a></li>
+              <li><a href="#">Scale</a></li>
+              <li><a href="#">Monitor</a></li>
+            </ul>
+          </div>
+          <div class="deploy_tabs col-sm-8">
+            <div class="row">
 
-          <div class="col-xs-12 col-sm-offset-4 col-sm-4"></div>
-          <div class="col-xs-12 col-sm-4"></div>
+              <!-- Cluster Deployments -->
+              <div class="col-xs-12 col-sm-6">
+                <img src="" alt="Cluster Deployments icon">
+                <h3>Cluster Deployments</h3>
+                <p>Keep your application up and running smoothly by distributing traffic across Droplets, including those running as Kubernetes worker nodes.</p>
+              </div>
 
+              <!-- Optimized compute -->
+              <div class="col-xs-12 col-sm-6">
+                <img src="" alt="Optimized compute types icon">
+                <h3>Optimized compute types</h3>
+                <p>Provision MySQL, Redis, and PostgreSQL databases in just a few clicks. We’ll handle setting up, backing up, and updating – so you can focus on building great apps.</p>
+              </div>
+            </div>
+            <div class="row">
+
+              <!-- Apps -->
+              <div class="col-xs-12 col-sm-6">
+                <img src="" alt="App Marketplace icon">
+                <h3>1-Click App Marketplace</h3>
+                <p>Quickly deploy projects using one of our preconfigured 1-Click Apps, like LAMP, Docker, and WordPress.</p>
+              </div>
+
+              <!-- Global -->
+              <div class="col-xs-12 col-sm-6">
+                <img src="" alt="Global icon">
+                <h3>Global availability</h3>
+                <p>Build, deploy, and scale apps quickly using a simple, fully managed solution. We’ll handle the infrastructure, app runtimes, and dependencies, so that you can push code to production in just a few clicks.</p>
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
-
     </section>
-    <!-- Fine sezione deploy -->
 
     <!-- Inizio section designed -->
     <section id="designed">
